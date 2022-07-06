@@ -1,0 +1,53 @@
+.banner{
+    color: rgba(191, 191, 191, 1);
+    object-fit: contain;
+    height: 500px;
+    opacity: 0.7;
+}
+.header-content{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+    
+}
+.header-information h2{
+font-size: 3rem;
+font-weight: 800;
+color: black;
+
+}
+.header-information p{
+font-size: 2rem;
+font-weight: 500;
+color: black;
+padding-top: 1rem;
+line-height: 1.3;
+max-width: 360px;
+
+}
+.contact-me{
+padding-top: 3rem;
+}
+.contact-me ul li a{
+color: black;
+font-size: 1.2rem;
+}
+.fa-envelope-open{
+    font-size: small;
+}
+.fa-phone-volume{
+    font-size: small;
+}
+.fa-map-marker-alt{
+    font-size: small;
+}
+.header-profile{
+position: relative;
+
+}
+.header-profile {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
