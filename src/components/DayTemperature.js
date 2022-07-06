@@ -8,16 +8,15 @@ const DayTemperature = () => {
         <hr className="my-2"/>
         <div className="flex flex-row items-center justify-between text-white py-3">
             <div className="flex flex-col items-center justify-center">
-              {/* {
-                typeof(getWeather.hourly !== {}) ?
-                <p className="font-light text-sm">{getWeather.hourly} AM</p>
-                :
-                ("")
-              } */}
-            <p className="font-light text-sm">{getWeather.hourly} AM</p>
+            <p className="font-light text-sm">{getWeather.hourly ? getWeather.hourly.time[0] : ''}AM</p>
             <p className="font-medium">22&deg;</p>
             <p className="font-medium">20 m/s</p>
-            <p className="font-medium">10</p>
+            {
+              getWeather.longitude ?
+              <p className="font-medium">{getWeather.hourly ? getWeather.hourly.time[0] : ''}</p>
+              :
+              <p className="font-medium">10</p>
+            }
             </div>
 
             <div className="flex flex-col items-center justify-center">

@@ -23,7 +23,8 @@ const useFetchHook = () => {
         fetch(`https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&hourly=windspeed_120m&hourly=relativehumidity_2m&hourly=cloudcover_mid`)
         .then(response => response.json())
         .then(data => setGetWeather(data))
-        console.log(getWeather.longitude);
+        // console.log(getWeather.hourly ? getWeather.hourly.time[0] : '')
+        // console.log(getWeather.longitude);
         
         // Axios.get(`https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&hourly=windspeed_120m&hourly=relativehumidity_2m&hourly=cloudcover_mid`)
         // .then(response => setGetWeather(response))
