@@ -6,7 +6,8 @@ const Search = ()=>{
   const [inputOne, setInputOne] = useState("")
   const inputRef = useRef()
 
-  const {handleOnClick, handleLocation, lati, long} = useFetchHook()
+  const {handleOnClick, handleLocation, lati, long, getWeather} = useFetchHook()
+  // console.log(getWeather.hourly ? getWeather.hourly.time[0] : '')
 
   return(
      <div className="flex flex-row justify-center my-6">
